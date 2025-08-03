@@ -10,7 +10,7 @@ A responsive single-page application built for XAG Labs' technical assessment, s
 - **Contact information** section
 - Smooth scroll-based navigation
 
-**Live Demo**: [View Project](https://your-deployed-link.com) *(Coming soon)*
+**Live Demo**: [View Project]([https://your-deployed-link.com](https://xag-labs-technical-assessment.vercel.app/)) 
 
 ## 🛠️ Technologies Used
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
