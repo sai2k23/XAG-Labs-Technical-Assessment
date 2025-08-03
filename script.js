@@ -82,6 +82,5 @@ function showToast(message) {
 // Usage
 showToast(' ✅ Thank you for your submission!');
   
-  // Reset form
-  this.reset();
+ 
 });
