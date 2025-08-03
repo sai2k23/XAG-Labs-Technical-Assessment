@@ -19,6 +19,14 @@ A responsive single-page application built for XAG Labs' technical assessment, s
 
 ## ✨ Key Features
 ✅ Responsive design (mobile & desktop)  
+├── assets/
+│ ├── member1.jpg # Team member photos
+│ ├── Logo.svg # Company logo
+│ └── ...
+├── index.html # Main HTML file
+├── style.css # All styling
+├── script.js # Interactive elements
+└── README.md # This documentation
 ✅ Interactive side navigation tabs  
 ✅ Form validation with user feedback  
 ✅ CSS animations for smooth transitions  
