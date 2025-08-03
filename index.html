@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M8 5v14l11-7z'/></svg>">
+  </head>
+  <body>
+    <div class="slider-container">
+      <!-- Navigation -->
+      <header class="navbar">
+        <div class="logo">LOGO</div>
+        <nav class="nav-links">
+          <a href="#our-team" class="active">OUR TEAM</a>
+          <a href="#personal-details">PERSONAL DETAILS</a>
+          <a href="#contact-us">CONTACT US</a>
+        </nav>
+      </header>
+
+      <!-- Our Team Section -->
+       <!-- Slides wrapper -->
+        <div class="slides-wrapper">
+      <section id="our-team" class="team-section">
+        <h1>Our Team</h1>
+        <p>
+          We believe that great ideas come to life through collaboration and
+          innovation. Our team is a diverse group of passionate professionals,
+          each bringing unique skills and experiences to the table. From
+          creative designers and strategic thinkers to technical experts and
+          problem-solvers, we are united by a shared vision of delivering
+          excellence in everything we do.
+        </p>
+        <p>
+          Our mission is to empower businesses and individuals by creating
+          innovative, sustainable, and user-friendly designs. With a culture
+          that values integrity, growth, and teamwork, we are committed to
+          creating meaningful solutions that make a difference. Whether it's
+          crafting cutting- edge designs, developing user-centered interfaces,
+          or building sustainable solutions, our team thrives on turning
+          challenges into opportunities.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="assets/member1.jpg" alt="Meredith Allen" />
+            <h3>Meredith Allen</h3>
+            <p>CEO</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/member2.jpg" alt="Thomas Woodward" />
+            <h3>Thomas Woodward</h3>
+            <p>COO</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/member3.jpg" alt="Wade Barton" />
+            <h3>Wade Barton</h3>
+            <p>Business Analyst</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/member4.jpg" alt="Yahir Marquez" />
+            <h3>Yahir Marquez</h3>
+            <p>Marketing Executive</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/member5.jpg" alt="Yahir Marquez" />
+            <h3>Yahir Marquez</h3>
+            <p>Marketing Executive</p>
+          </div>
+        </div>
+      </section>
+        </div>
+
+      <!-- Personal Details Section -->
+      <section id="personal-details" class="personal-details-section">
+        <h2>Personal Details</h2>
+        <form class="personal-details-form">
+          <div class="input-wrapper">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+          <div class="input-wrapper">
+            <i class="fas fa-phone"></i>
+            <input type="tel" placeholder="Enter Your Mobile Number" />
+          </div>
+          <div class="input-wrapper">
+            <textarea placeholder="Enter Your Address"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact-us" class="contact-us-section">
+        <h2>Contact Us</h2>
+        <p>
+          We are a team of engineers, communication experts and innovators who
+          specialise in developing technology propositions for the world around
+          us. We noticed that in an overwhelming number of use cases, technology
+          was not really the problem; mistrust came from how it was deployed by
+          creators and then understood and used by consumers.
+        </p>
+      </section>
+
+      <!-- Side Tabs -->
+      <div class="side-tabs">
+        <div class="tab pink-tab" onclick="scrollToSection('personal-details')">
+          Personal Details
+        </div>
+        <div class="tab orange-tab" onclick="scrollToSection('contact-us')">
+          Contact Us
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
