@@ -170,6 +170,15 @@ section {
   resize: vertical;
   min-height: 100px;
 }
+.input-wrapper input:invalid,
+.input-wrapper textarea:invalid {
+  border-left: 3px solid #e30655;
+}
+
+.input-wrapper input:valid,
+.input-wrapper textarea:valid {
+  border-left: 3px solid #4CAF50;
+}
 /* Add this to your CSS file */
 .submit-btn {
   background-color: white;
@@ -195,7 +204,10 @@ section {
 .submit-btn:active {
   transform: translateY(0);
 }
-
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 /* For better visual feedback on form submission */
 .personal-details-form:invalid .submit-btn {
   opacity: 0.7;
@@ -210,7 +222,7 @@ section {
 .personal-details-form:valid .submit-btn:hover {
   background-color: #c00547;
 }
-/* Toast Notification styling*/
+/* Toast Notification styling - UPDATED */
 .toast {
   position: fixed;
   bottom: 20px;
@@ -222,13 +234,21 @@ section {
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   z-index: 1000;
-  animation: fadeInOut 3s ease-in-out;
+  animation: fadeInOut 2.5s ease-in-out;
   opacity: 0;
+  pointer-events: none;
 }
 
 @keyframes fadeInOut {
-  0%, 100% { opacity: 0; }
-  10%, 90% { opacity: 1; }
+  0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
+
+/* Error toast variant */
+.toast.error {
+  background: #e30655;
 }
 /* Contact Us Section */
 .contact-us-section {
