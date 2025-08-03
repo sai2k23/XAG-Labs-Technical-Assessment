@@ -170,16 +170,9 @@ section {
   resize: vertical;
   min-height: 100px;
 }
-.input-wrapper input:invalid,
-.input-wrapper textarea:invalid {
-  border-left: 3px solid #e30655;
-}
 
-.input-wrapper input:valid,
-.input-wrapper textarea:valid {
-  border-left: 3px solid #4CAF50;
-}
-/* Add this to your CSS file */
+
+/* Submit Button */
 .submit-btn {
   background-color: white;
   color: #e30655;
@@ -201,13 +194,7 @@ section {
   transform: translateY(-2px);
 }
 
-.submit-btn:active {
-  transform: translateY(0);
-}
-.submit-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+
 /* For better visual feedback on form submission */
 .personal-details-form:invalid .submit-btn {
   opacity: 0.7;
